@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "135714047480",
+    "firebase_url": "https://visitorbook-34685.firebaseio.com",
+    "project_id": "visitorbook-34685",
+    "storage_bucket": "visitorbook-34685.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:135714047480:android:7a82ae706c22fe30",
+        "android_client_info": {
+          "package_name": "net.daum.www.locationstringtest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "135714047480-2qr10eir5j9qktiroda3q5cde21ovr61.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "net.daum.www.locationstringtest",
+            "certificate_hash": "ee5dbcf1d4da757c5d8fece693d7c7d9771a398a"
+          }
+        },
+        {
+          "client_id": "135714047480-a4slgs7eiqdf6urj1dlh5nla54i58sg4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFhj9YgcojUTp3VGtJGx6YzRhNsGkOq_o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "135714047480-a4slgs7eiqdf6urj1dlh5nla54i58sg4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

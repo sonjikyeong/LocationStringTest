@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LocationStringTest</string>
+    <string name="locationfind">현재의 위치를 찾습니다..</string>
+    <string name="start">start</string>
+</resources>
