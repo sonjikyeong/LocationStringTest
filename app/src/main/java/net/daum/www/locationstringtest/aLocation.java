@@ -1,5 +1,8 @@
 package net.daum.www.locationstringtest;
 
+import android.widget.Button;
+import android.widget.ImageView;
+
 /**
  * Created by thswl on 2017-09-03.
  */
@@ -7,7 +10,6 @@ package net.daum.www.locationstringtest;
 public class aLocation {
     private double mAltitude;
     private double mLongtitude;
-
     private String mTitle;
     private String mContent;
 
@@ -15,9 +17,11 @@ public class aLocation {
         this.mTitle=mA;
         this.mContent=mL;
     }
+
     public aLocation(){
         this.mAltitude=0;
         this.mLongtitude=0;
+
         this.mTitle=null;
         this.mContent=null;
     }
@@ -53,4 +57,5 @@ public class aLocation {
     public void setContent(String content) {
         mContent = content;
     }
+
 }
