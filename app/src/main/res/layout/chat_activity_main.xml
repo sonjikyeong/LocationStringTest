@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="50dp"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp"
+    android:paddingTop="50dp"
+    android:weightSum="8"
+              tools:context="net.daum.www.locationstringtest.list_MainActivity"
+    >
+     
+        <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+     
+        
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"/>
+     
+       
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="10">
+         
+                    
+
+        <Editext
+            android:id="@+id/editText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:ems="10"
+            android:hint="Contents"
+            android:inputType="textPersonName"/>
+         
+                    
+
+        <Button
+            android:id="@+id/inputBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="입력"/>
+                
+    </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+

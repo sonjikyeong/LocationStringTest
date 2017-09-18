@@ -32,16 +32,10 @@ public class myAdapter extends RecyclerView.Adapter<myAdapter.ViewHolder> {
         public TextView mTitle;
         public TextView mContent;
 
-        private Button mImageLoadButton;
-        private ImageView iv;
-
         public ViewHolder(View view) {
             super(view);
             mTitle = (TextView) view.findViewById(R.id.title_text);
             mContent = (TextView) view.findViewById(R.id.content_text);
-
-            mImageLoadButton = (Button) view.findViewById(R.id.photoAlbum);
-            iv = (ImageView) view.findViewById(R.id.imgView);
 
         }
     }

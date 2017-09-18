@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "135714047480-bpi5mk19t8iqm0s7kut304hlup1l5tm0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "net.daum.www.locationstringtest",
+            "certificate_hash": "141587d7f666262ad12efee130f8692fd6619661"
+          }
+        },
+        {
           "client_id": "135714047480-2qr10eir5j9qktiroda3q5cde21ovr61.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

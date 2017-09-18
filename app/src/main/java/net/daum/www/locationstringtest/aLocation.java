@@ -10,12 +10,15 @@ import android.widget.ImageView;
 public class aLocation {
     private double mAltitude;
     private double mLongtitude;
+
     private String mTitle;
     private String mContent;
+    private ImageView mListImage;
 
-    public aLocation(String mA, String mL){
+    public aLocation(String mA, String mL, ImageView mI){
         this.mTitle=mA;
         this.mContent=mL;
+        this.mListImage=mI;
     }
 
     public aLocation(){
@@ -24,6 +27,7 @@ public class aLocation {
 
         this.mTitle=null;
         this.mContent=null;
+        this.mListImage=null;
     }
 
     public double getAltitude() {
@@ -58,4 +62,11 @@ public class aLocation {
         mContent = content;
     }
 
+    public ImageView getListImage() {
+        return mListImage;
+    }
+
+    public void setListImage(ImageView listImage) {
+        mListImage = listImage;
+    }
 }

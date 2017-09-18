@@ -23,25 +23,13 @@
         android:padding="4dp"
         tools:text="content"/>
 
-
     <ImageView
-        android:id="@+id/imgView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/common_full_open_on_phone"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:src="@drawable/ic_launcher"
-        android:text="hello"
-        />
-
-    <Button
-        android:id="@+id/photoAlbum"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="앨범에서가져오기"
-        android:layout_below="@+id/content_text"
-        android:layout_centerHorizontal="true"
-        />
+        android:layout_alignParentEnd="true"/>
 
 </RelativeLayout>
