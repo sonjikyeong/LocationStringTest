@@ -27,7 +27,7 @@
         android:id="@+id/imageView"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        app:srcCompat="@drawable/common_full_open_on_phone"
+        app:srcCompat="@drawable/common_google_signin_btn_icon_dark"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"/>

@@ -1,6 +1,7 @@
 package net.daum.www.locationstringtest;
 
-import android.support.v7.app.AppCompatActivity;
+import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -20,6 +21,11 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 public class list_MainActivity extends AppCompatActivity {
+
+    public static Intent newIntent(Context packageContext){
+        Intent intent = new Intent(packageContext, list_MainActivity.class);
+        return intent;
+    }
 
     // DB에 저장시킬 데이터를 입력받는 EditText
     private EditText editText;
@@ -49,7 +55,7 @@ public class list_MainActivity extends AppCompatActivity {
 // DB 관련 변수 초기화
         database = FirebaseDatabase.getInstance();
 // message Reference가 없어도 상관 x
-        myRef = database.getReference("content");
+        myRef = database.getReference("Context");
 
 // ListView에 출력할 데이터 초기화
         dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_dropdown_item_1line, new ArrayList<String>());

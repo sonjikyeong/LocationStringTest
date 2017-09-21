@@ -58,7 +58,6 @@ public class addData extends AppCompatActivity {
 
     DatabaseReference mDataset = FirebaseDatabase.getInstance().getReference();
     DatabaseReference mDataRef = mDataset.child("content");
-
     DatabaseReference mDataRefCheck = mDataset.child("Checkbox");
 
 
@@ -84,6 +83,9 @@ public class addData extends AppCompatActivity {
             }
         });
 
+        mDataContent = (EditText) findViewById(R.id.data_content);
+        mDataContent.setText("empty");
+
         mUploadButton = (Button)findViewById(R.id.dataUploadButton);
         mUploadButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -91,31 +93,30 @@ public class addData extends AppCompatActivity {
                 //업로드
                 uploadFile();
 
+                mDataContent.addTextChangedListener(new TextWatcher() {
+                    @Override
+                    public void beforeTextChanged(
+                            CharSequence s, int start, int count, int after) {
+                        //이 메서드의 실행 코드는 여기서는 필요없음
+                    }
+
+                    @Override
+                    public void onTextChanged(
+                            CharSequence s, int start, int before, int count) {
+                        mDataRef.setValue(s.toString());
+                    }
+
+                    @Override
+                    public void afterTextChanged(Editable s) {
+                        //이 메서드의 실행 코드는 여기서 필요 99없음
+                    }
+                });
             }
         });
 
         mImageView = (ImageView)findViewById(R.id.visit_photo);
 
-        mDataContent = (EditText) findViewById(R.id.data_content);
-        mDataContent.setText("empty");
-        mDataContent.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(
-                    CharSequence s, int start, int count, int after) {
-                //이 메서드의 실행 코드는 여기서는 필요없음
-            }
 
-            @Override
-            public void onTextChanged(
-                    CharSequence s, int start, int before, int count) {
-                mDataRef.setValue(s.toString());
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-                //이 메서드의 실행 코드는 여기서 필요 99없음
-            }
-        });
         mCheckBox = (CheckBox)findViewById(R.id.checkBox);
         mCheckBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override

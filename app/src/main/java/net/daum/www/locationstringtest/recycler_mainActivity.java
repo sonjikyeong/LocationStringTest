@@ -40,7 +40,7 @@ public class recycler_mainActivity extends AppCompatActivity {
     private ImageView mItemImage;
 
     DatabaseReference mDataset = FirebaseDatabase.getInstance().getReference();
-    DatabaseReference mDataRefti = mDataset.child("Context");
+    DatabaseReference mDataRefti = mDataset.child("content");
 
     FirebaseStorage storage = FirebaseStorage.getInstance();
     StorageReference storageRef = storage.getReference();
@@ -67,7 +67,7 @@ public class recycler_mainActivity extends AppCompatActivity {
 
         mItemImage = (ImageView)findViewById(R.id.imageView);
 
-        myDataset.add(new aLocation("titld","content",mItemImage));
+
         myDataset.add(new aLocation("hello! seoul", "very exiciting place",mItemImage));
 
     }
@@ -96,8 +96,6 @@ public class recycler_mainActivity extends AppCompatActivity {
         mDataRefti.addValueEventListener(new ValueEventListener(){
             @Override
             public void onDataChange(DataSnapshot dataSnapshot2){
-                String text2 = dataSnapshot2.child("title").getValue(String.class);
-                String text1 = dataSnapshot2.child("context").getValue(String.class);
 
             }
             @Override
