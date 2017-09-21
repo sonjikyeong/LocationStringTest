@@ -55,7 +55,7 @@ public class addData extends AppCompatActivity {
 
     private static final String TAG = "addData";
     private Uri filePath;
-
+//
     DatabaseReference mDataset = FirebaseDatabase.getInstance().getReference();
     DatabaseReference mDataRef = mDataset.child("content");
     DatabaseReference mDataRefCheck = mDataset.child("Checkbox");
