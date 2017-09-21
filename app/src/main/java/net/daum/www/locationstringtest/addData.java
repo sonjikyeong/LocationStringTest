@@ -52,7 +52,7 @@ public class addData extends AppCompatActivity {
     private CheckBox mCheckBox;
     private int mNumber = 0;
 
-
+///
     private static final String TAG = "addData";
     private Uri filePath;
 
