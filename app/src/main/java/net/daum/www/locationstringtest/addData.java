@@ -44,7 +44,7 @@ import java.util.Date;
  */
 
 public class addData extends AppCompatActivity {
-    //
+    ////
     private EditText mDataContent;
     private ImageButton mAlbumCamera;
     private Button mUploadButton;
